@@ -63,4 +63,14 @@ class ContentViewModel: ObservableObject {
             rssItems[index].isFavorite.toggle()
         }
     }
+    
+    func removeRSSItem(at offsets: IndexSet) {
+        for offset in offsets {
+            let item = rssItems[offset]
+            if let index = favoriteItems.firstIndex(where: { $0.id == item.id }) {
+                favoriteItems.remove(at: index)
+            }
+        }
+        rssItems.remove(atOffsets: offsets)
+    }
 }

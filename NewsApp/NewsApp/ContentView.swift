@@ -61,12 +61,8 @@ struct ContentView: View {
                     }
                 }
             }
-            .onDelete(perform: removeRSSItem)
+            .onDelete(perform: viewModel.removeRSSItem)
         }
-    }
-    
-    func removeRSSItem(at offsets: IndexSet) {
-        viewModel.rssItems.remove(atOffsets: offsets)
     }
 }
 
@@ -124,7 +120,7 @@ struct FavoritesView: View {
         List {
             ForEach(favorites) { item in
                 NavigationLink(destination: RSSFeedItemDetailView(item: item)) {
-                    VStack {
+                    VStack(alignment: .leading) {
                         Text(item.title ?? "No title")
                             .font(.headline)
                         

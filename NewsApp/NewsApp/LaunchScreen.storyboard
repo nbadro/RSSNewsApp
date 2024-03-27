@@ -19,9 +19,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Zfc-0x-urA">
                                 <rect key="frame" x="0.0" y="-137" width="393" height="1127"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaD-ki-cY8">
-                                <rect key="frame" x="119" y="379" width="154" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaD-ki-cY8">
+                                <rect key="frame" x="123.33333333333333" y="406.33333333333331" width="146.33333333333337" height="39.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" name="titleColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,6 +29,8 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="gaD-ki-cY8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="11c-2O-cuA"/>
+                            <constraint firstItem="gaD-ki-cY8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2nQ-Wl-Hfc"/>
                             <constraint firstItem="Zfc-0x-urA" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="Dac-3v-xwN"/>
                             <constraint firstItem="Zfc-0x-urA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-137" id="GOP-C8-kn9"/>
                             <constraint firstAttribute="bottom" secondItem="Zfc-0x-urA" secondAttribute="bottom" constant="-138" id="kH5-RG-bTo"/>
